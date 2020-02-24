@@ -302,7 +302,6 @@
 		</category>
 		<sep></sep>
 	</category>
-	<category name="CAT_ACTIONNEURS" colour="#00929F">	
 	<category name="CAT_CAPTEURS" colour="#00929F">
 		<block type="SENSOR_ACTUATOR_inout_bp"></block>
 		<block type="SENSOR_ACTUATOR_lm35"></block>
