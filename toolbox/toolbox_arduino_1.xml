@@ -108,12 +108,6 @@
 	</category>
 	<category name="CAT_FUNCTIONS" custom="PROCEDURE" colour="#FF6680"></category>
 	<sep></sep>
-	<category name="CAT_MBOT_1" colour="#33C7F2">
-		<block type="mbot_forward"></block>
-		<block type="mbot_backward"></block>	
-		<block type="mbot_turn_left"></block>	
-		<block type="mbot_turn_right"></block>	
-	</category>
 	<category name="CAT_ARDUINO" colour="#00979D">
 		<block type="base_begin"></block>
 		<block type="base_setup_loop"></block>
@@ -261,35 +255,5 @@
 			<block type="conversion_map"></block>
 		</category>
 		<sep></sep>
-	</category>
-	<category name="CAT_ROMEO_1" colour="#F39800">
-		<block type="romeo_forward"></block>
-		<block type="romeo_backward"></block>	
-		<block type="romeo_turn_left"></block>	
-		<block type="romeo_turn_right"></block>		
-		<block type="romeo_switch"></block>
-	</category>
-	<category name="CAT_KIT_VELO_1" colour="#C88330">
-		<block type="kit_velo_niv1_chenillard"></block>
-		<block type="kit_velo_niv1_tone"></block>	
-		<block type="kit_velo_niv1_notone"></block>	
-		<block type="kit_velo_niv1_test_BP"></block>			
-		<block type="kit_velo_niv1_pot"></block>		
-	</category>
-	<category name="CAT_BT_ELECTRONICS" colour="#142D5E">
-		<block type="BT_ELEC_Init" disabled="true"></block>
-		<sep></sep>
-		<block type="BT_ELEC_LED_brightness"></block>
-		<block type="BT_ELEC_RC_car"></block>
-	</category>
-	<category name="CAT_ROBOT_MISC" colour="#00979D">
-		<block type="IR_serial_decoder"></block>
-		<block type="IR_get_blink"></block>
-		<block type="IR_get"></block>
-	</category>
-	<category name="CAT_RF433" colour="#0152AB">
-		<block type="rf433_rxready" colour="#0152AB"></block>
-		<block type="rf433_rx" colour="#0152AB"></block>
-		<block type="rf433_tx" colour="#0152AB"></block>
 	</category>
 </toolbox>
