@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <toolbox>
-	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS</parametre>
+	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO
+	</parametre>
 	<category name="CAT_LOGIC" colour="#FFAB19">
 		<block type="controls_if"></block>
 		<block type="controls_switch"></block>
@@ -78,12 +79,6 @@
 		</block>
 		<block type="math_random_float"></block>
 	</category>
-	<!--category name="CAT_LIST" colour="#58B5DC"> <block type="lists_create_empty"></block> 
-		<block type="lists_create_with"></block> <block type="lists_repeat"> <value 
-		name="NUM"> <block type="math_number"> <field name="NUM">5</field> </block> 
-		</value> </block> <block type="lists_length"></block> <block type="lists_isEmpty"></block> 
-		<block type="lists_indexOf"></block> <block type="lists_getIndex"></block> 
-		<block type="lists_setIndex"></block> </category -->
 	<category name="CAT_ARRAY" colour="#4CBFE6">
 		<block type="array_create_with"></block>
 		<block type="array_getIndex">
@@ -105,50 +100,160 @@
 		</block>
 		<block type="text_length"></block>
 		<block type="text_isEmpty"></block>
-		<!-- <block type="text_indexOf"> -->
-		<!-- <value name="VALUE"> -->
-		<!-- <block type="variables_get"> -->
-		<!-- <field name="VAR" class="textVar">...</field> -->
-		<!-- </block> -->
-		<!-- </value> -->
-		<!-- </block> -->
-		<!-- <block type="text_charAt"> -->
-		<!-- <value name="VALUE"> -->
-		<!-- <block type="variables_get"> -->
-		<!-- <field name="VAR" class="textVar">...</field> -->
-		<!-- </block> -->
-		<!-- </value> -->
-		<!-- </block> -->
-		<!-- <block type="text_getSubstring"> -->
-		<!-- <value name="STRING"> -->
-		<!-- <block type="variables_get"> -->
-		<!-- <field name="VAR" class="textVar">...</field> -->
-		<!-- </block> -->
-		<!-- </value> -->
-		<!-- </block> -->
-		<!-- <block type="text_changeCase"></block> -->
-		<!-- <block type="text_trim"></block> -->
-		<!-- <block type="text_print"></block> -->
-		<!-- <block type="text_prompt_ext"> -->
-		<!-- <value name="TEXT"> -->
-		<!-- <block type="text"></block> -->
-		<!-- </value> -->
-		<!-- </block> -->
 	</category>
-	<!-- <category name="CAT_COLOR" colour="#c09e8c"> <block type="colour_picker"></block> 
-		<block type="colour_random"></block> <block type="colour_rgb"> <value name="RED"> 
-		<block type="math_number"> <field name="NUM">100</field> </block> </value> 
-		<value name="GREEN"> <block type="math_number"> <field name="NUM">50</field> 
-		</block> </value> <value name="BLUE"> <block type="math_number"> <field name="NUM">0</field> 
-		</block> </value> </block> <block type="colour_blend"> <value name="COLOUR1"> 
-		<block type="colour_picker"> <field name="COLOUR">#ff0000</field> </block> 
-		</value> <value name="COLOUR2"> <block type="colour_picker"> <field name="COLOUR">#3333ff</field> 
-		</block> </value> <value name="RATIO"> <block type="math_number"> <field 
-		name="NUM">0.5</field> </block> </value> </block> </category> -->
 	<category name="CAT_VARIABLES" custom="VARIABLE" colour="#FF8C1A">
+        <!--block type="math_change"></block>
 		<block type="variables_set"></block>
-		<block type="variables_set_type"></block>
-		<block type="variables_get"></block>
+		<block type="variables_get"></block-->
 	</category>
 	<category name="CAT_FUNCTIONS" custom="PROCEDURE" colour="#FF6680"></category>
+	<sep></sep>
+	<category name="CAT_ARDUINO" colour="#00979D">
+		<block type="base_begin"></block>
+		<block type="base_setup_loop"></block>
+		<block type="base_define"></block>
+		<block type="base_define_bloc"></block>
+		<block type="biblio_include"></block>
+		<block type="base_end"></block>
+		<category name="CAT_ARDUINO_IN" colour="#00979D">
+			<block type="inout_analog_read_validator"></block>
+			<block type="inout_digital_read_validator"></block>
+			<block type="inout_digital_read_check"></block>
+			<block type="inout_onoff"></block>
+			<block type="base_toggle"></block>
+			<block type="inout_angle"></block>
+			<block type="inout_button_wait_il"></block>
+			<block type="inout_button_wait_iph"></block>
+			<block type="var_random">
+				<value name="rand_min">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+				<value name="rand_max">
+					<shadow type="math_number">
+						<field name="NUM">100</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="base_map">
+				<value name="NUM">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+				<value name="DMAX">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="various_constrain">
+				<value name="a">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+				<value name="b">
+					<shadow type="math_number">
+						<field name="NUM">100</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="inout_attachInterrupt"></block>
+			<block type="inout_detachInterrupt"></block>
+		</category>
+		<category name="CAT_ARDUINO_OUT" colour="#00979D">
+			<block type="inout_buildin_led"></block>
+			<block type="inout_digital_write_validator"></block>
+			<block type="inout_PWM_write_validator">
+				<value name="NUM">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="inout_analog_write_validator">
+				<value name="NUM">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="inout_digital_write">
+				<value name="STAT">
+					<shadow type="inout_onoff"></shadow>
+				</value>
+			</block>
+			<block type="inout_PWM_write">
+				<value name="NUM">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="inout_analog_write">
+				<value name="NUM">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="tone">
+				<value name="NUM">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+				<value name="TPS">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="tone_notime">
+				<value name="PIN">
+					<shadow type="math_number">
+						<field name="NUM">2</field>
+					</shadow>
+				</value>
+				<value name="NUM">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="notone"></block>
+		</category>
+		<category name="CAT_ARDUINO_TIME" colour="#00979D">
+			<block type="millis"></block>
+			<block type="millis_sec"></block>
+			<block type="inout_pulsein"></block>
+			<block type="inout_pulsein_timeout"></block>
+			<block type="base_delay">
+				<value name="DELAY_TIME">
+					<shadow type="math_number">
+						<field name="NUM">1000</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="base_delay_sec">
+				<value name="DELAY_TIME">
+					<shadow type="math_number">
+						<field name="NUM">5</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="tempo_no_delay"></block>
+		</category>
+		<category name="CAT_ARDUINO_CONVERSION" colour="#00979D">
+			<block type="conversion_tochar"></block>
+			<block type="conversion_tobyte"></block>
+			<block type="conversion_toint"></block>
+			<block type="conversion_tofloat"></block>
+			<block type="conversion_toString"></block>
+			<block type="conversion_map"></block>
+		</category>
+		<sep></sep>
+	</category>
 </toolbox>
