@@ -56,7 +56,7 @@ Code.getLang = function() {
   var lang = BlocklyDuino.getStringParamFromUrl('lang', '');
   if (Code.LANGUAGE_NAME[lang] === undefined) {
     // Default to English.
-    lang = 'en';
+    lang = 'de';
   }
   return lang;
 };

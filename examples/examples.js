@@ -445,7 +445,7 @@ Examples.getLang = function() {
 	var lang = Examples.getStringParamFromUrl('lang', '');
 	if (Examples.LANGUAGE_NAME[lang] === undefined) {
 		// Default to English.
-		lang = 'en';
+		lang = 'de';
 	}
 	return lang;
 };

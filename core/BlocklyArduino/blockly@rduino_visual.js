@@ -28,11 +28,11 @@ Blockly.makeColour = function(color) {
 
 BlocklyDuino.changeFont = function() {
 	var FontChoice = $('#fontChoice').val();
-	if (FontChoice==='O') {
-		document.body.style.fontFamily = "OpenDyslexic";
-	}
 	if (FontChoice==='T') {
 		document.body.style.fontFamily = "Trebuchet MS";
+	}
+	if (FontChoice==='O') {
+		document.body.style.fontFamily = "OpenDyslexic";
 	}
 	if (FontChoice==='V') {
 		document.body.style.fontFamily = "V";
@@ -42,13 +42,13 @@ BlocklyDuino.changeFont = function() {
 
 BlocklyDuino.changeFontURL = function() {
 	var FontChoiceUrl = BlocklyDuino.getStringParamFromUrl('font', '');
-	if (FontChoiceUrl===undefined||FontChoiceUrl==='O') {
-		document.body.style.fontFamily = "OpenDyslexic";
-		var FontChoice = "O";
-	}
-	if (FontChoiceUrl==='T') {
+	if (FontChoiceUrl===undefined||FontChoiceUrl===''||FontChoiceUrl==='T') {
 		document.body.style.fontFamily = "Trebuchet MS";
 		var FontChoice = "T";
+	}
+	if (FontChoiceUrl==='O') {
+		document.body.style.fontFamily = "OpenDyslexic";
+		var FontChoice = "O";
 	}
 	if (FontChoiceUrl==='V') {
 		document.body.style.fontFamily = "V";
