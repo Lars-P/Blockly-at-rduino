@@ -109,7 +109,8 @@
 	<category name="CAT_FUNCTIONS" custom="PROCEDURE" colour="#FF6680"></category>
 	<sep></sep>
 	<category name="CAT_ARDUINO" colour="#00979D">
-		<block type="base_begin"></block>
+		<block type="base_setup"></block>
+		<block type="base_loop"></block>
 		<category name="CAT_ARDUINO_IN" colour="#00979D">
 			<block type="inout_digital_read_validator"></block>
 			<block type="inout_onoff"></block>

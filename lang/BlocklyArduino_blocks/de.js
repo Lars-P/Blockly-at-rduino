@@ -139,7 +139,7 @@ Blockly.Msg.CAT_DFRobot_SHIELD_LCDKEYPAD = "Shield LCD Keypad"; //Added february
 Blockly.Msg.CAT_DFPLAYER = "DFPlayer mini MP3";
 Blockly.Msg.CAT_DFRobot_ISD1820 = "Voice Recorder-ISD1820";
 
-Blockly.Msg.CAT_LED_RGB_CHAIN = "chainable RGB LED";
+Blockly.Msg.CAT_LED_RGB_CHAIN = "LED-Leuchtstreifen";
 Blockly.Msg.CAT_OLED_U8G = "OLED screen I2C";
 
 Blockly.Msg.CAT_ROBUNO = "RobUno";  //added march 17th 2016
@@ -204,7 +204,7 @@ Blockly.Msg.CAT_JEULIN = "Traffic light";  //added january 11th 2016
 Blockly.Msg.CAT_JEULIN_IN = "Sensors";
 Blockly.Msg.CAT_JEULIN_OUT = "Actuators";
 
-Blockly.Msg.CAT_MULTIFUNCTION = "multi-fonction";  //added march 9th 2016
+Blockly.Msg.CAT_MULTIFUNCTION = "Multi-Fuction Shield";  //added march 9th 2016
 
 Blockly.Msg.CAT_RFID = "RFID";  //added april 13th 2017
 
@@ -478,7 +478,7 @@ Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_INPUT1 = "Setze Pin-Anschluss auf Digita
 Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_INPUT2 = "Zu logisch (0 oder 1)";
 Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_TOOLTIP = "Setze einen Pin-Anschluss auf den Wert 0 oder 1";
 Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_HELPURL = "http://arduino.cc/en/Reference/DigitalRead";
-Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT = "Setze Pin-Wert auf (0 oder 1)";
+Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT = "Lese Pin-Wert (0 oder 1) für Pin";
 Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_TOOLTIP = "Setze den Logikwert auf 0 oder 1";
 Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_PULL_UP = "Setze Pin-Konnektor auf +5V (Pull Up)";
 Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_PULL_UP_TOOLTIP = " Setze den Logikwert auf 0 oder 1\nPull-Up setzt den Wert standardmässig auf 1";
@@ -499,7 +499,7 @@ Blockly.Msg.ARDUINO_NOTONE_HELPURL = "http://arduino.cc/en/Reference/AnalogWrite
 Blockly.Msg.ARDUINO_NOTONE_INPUT = "Stop den Ton an Pin";
 Blockly.Msg.ARDUINO_NOTONE_TOOLTIP = "Stoppt die Tonausgabe";
 Blockly.Msg.ARDUINO_INOUT_ANALOG_READ_HELPURL = "http://arduino.cc/en/Reference/AnalogRead";
-Blockly.Msg.ARDUINO_INOUT_ANALOG_READ_INPUT = "Lese den Analogwert ein";
+Blockly.Msg.ARDUINO_INOUT_ANALOG_READ_INPUT = "Lese den Analogwert für Pin";
 Blockly.Msg.ARDUINO_INOUT_ANALOG_READ_TOOLTIP = "Gibt einen Wert zwischen 0 und 1023 zurück";
 Blockly.Msg.ARDUINO_INOUT_ONOFF_HELPURL = "http://arduino.cc/en/Reference/Constants";
 Blockly.Msg.ARDUINO_INOUT_STATE = "Status";
@@ -1156,17 +1156,17 @@ Blockly.Msg.lp2i_u8g_4draw_print_N3 = "Number 3 (at end) ="
 Blockly.Msg.lp2i_u8g_4draw_print_Text_line4 = "line 4 =";
 Blockly.Msg.lp2i_u8g_4draw_print_N4 = "Number 4 (at end) ="
 
-Blockly.Msg.lp2i_ledRGB_WS2812B_init = "Led RGB WS2812B Init";
+Blockly.Msg.lp2i_ledRGB_WS2812B_init = "Basiseinrichtung Lichtleiste";
 Blockly.Msg.lp2i_ledRGB_WS2812B_init_Pin = "Pin =";
-Blockly.Msg.lp2i_ledRGB_WS2812B_init_Number_of_Pixels = "Number of pixels =";
+Blockly.Msg.lp2i_ledRGB_WS2812B_init_Number_of_Pixels = "Anzahl Pixel =";
 Blockly.Msg.lp2i_ledRGB_WS2812B_DEFAULT_NAME = "RGB_LED";
-Blockly.Msg.lp2i_ledRGB_WS2812B_Brightness = "Brightness =";
+Blockly.Msg.lp2i_ledRGB_WS2812B_Brightness = "Helligkeit =";
 
-Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor = "Led RGB WS2812B. Send color :";
-Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Red = "Red (255 max) =";
-Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Green = "Green (255 max) =";
-Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Blue = "Blue (255 max) =";
-Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Pixel_Number = "for pixel number (0 first) =";
+Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor = "Lichtleiste einstellen";
+Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Red = "Rot (0-255) =";
+Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Green = "Grün (0-255) =";
+Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Blue = "Blau (0-255) =";
+Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Pixel_Number = "für Pixel (0 = erster) =";
 
 Blockly.Msg.LCD_SHIELD_PRINT_HELPURL = "http://www.dfrobot.com/wiki/index.php?title=Arduino_LCD_KeyPad_Shield_(SKU:_DFR0009)";
 Blockly.Msg.LCD_SHIELD_PRINT_TEXT = "LCD Keypad Shield screen";
@@ -1207,30 +1207,30 @@ Blockly.Msg.ADAFRUIT_MOTORSHIELD_VARIABLES = "Variables : x = retX - y = retY";
 Blockly.Msg.ADAFRUIT_MOTORSHIELD_VARIABLES2 = "Neutre+ = neut - Neutre- = neutn";
 
 //SHIELD MULTIFUNCTION
-Blockly.Msg.multifunction_buildin_led_INPUT = "mettre la DEL intégrée";
-Blockly.Msg.multifunction_buildin_led_STAT = "à l'état";
-Blockly.Msg.multifunction_buildin_led_TOOLTIP = "allumer ou éteindre 1 des 4 DEL intégrées";
-Blockly.Msg.multifunction_digital_read_INPUT = "état logique du bouton poussoir";
-Blockly.Msg.multifunction_digital_read_TOOLTIP = "détecte l'état des BP intégrés";
-Blockly.Msg.multifunction_pot_read_INPUT = "la valeur analogique du potentiomètre";
-Blockly.Msg.multifunction_pot_read_TOOLTIP = "lis la valeur de la résistance ajustable";
+Blockly.Msg.multifunction_buildin_led_INPUT = "Setze integrierte LED";
+Blockly.Msg.multifunction_buildin_led_STAT = "auf";
+Blockly.Msg.multifunction_buildin_led_TOOLTIP = "Schaltet eine der 4 LEDs ein oder aus";
+Blockly.Msg.multifunction_digital_read_INPUT = "Lese den Wert von Taster";
+Blockly.Msg.multifunction_digital_read_TOOLTIP = "Liest den Zustand des jeweiligen Tasters ein";
+Blockly.Msg.multifunction_pot_read_INPUT = "Lese den Wert des Potentiometers";
+Blockly.Msg.multifunction_pot_read_TOOLTIP = "Liest den aktuellen Wert (0-1024) des Potentiometers ein";
 Blockly.Msg.multifunction_analog_read_INPUT = "la valeur lue sur le port analogique A5";
 Blockly.Msg.multifunction_analog_read_TOOLTIP = "seul A5 est disponible";
 Blockly.Msg.multifunction_PWM_write_OUTPUT = "envoyer sur la sortie PWM~";
 Blockly.Msg.multifunction_PWM_write_ANGLE = "la valeur";
 Blockly.Msg.multifunction_PWM_write_TOOLTIP = "sortie numérique ou 'analogique' PWM";
-Blockly.Msg.multifunction_tone_INPUT1 = "émettre un son sur le buzzer";
-Blockly.Msg.multifunction_tone_INPUT2 = "d'une fréquence (Hz)";
-Blockly.Msg.multifunction_tone_INPUT3 = "pendant une durée (ms) de";
-Blockly.Msg.multifunction_tone_TOOLTIP = "buzzer connecté sur la sortie Numérique D";
-Blockly.Msg.multifunction_notone_INPUT = "stopper le son sur la broche";
-Blockly.Msg.multifunction_notone_TOOLTIP = "mets la buzzer à 0";
-Blockly.Msg.multifunction_segment_TEXT = "afficher le nombre";
-Blockly.Msg.multifunction_segment_INPUT1 = "1er chiffre";
-Blockly.Msg.multifunction_segment_INPUT2 = "2ème chiffre";
-Blockly.Msg.multifunction_segment_INPUT3 = "3ème chiffre";
-Blockly.Msg.multifunction_segment_INPUT4 = "4ème chiffre";
-Blockly.Msg.multifunction_segment_TOOLTIP = "afficher 4 chifres sur les 7 segments";
+Blockly.Msg.multifunction_tone_INPUT1 = "Ton über den Buzzer ausgeben";
+Blockly.Msg.multifunction_tone_INPUT2 = "Frequenz (Hz)";
+Blockly.Msg.multifunction_tone_INPUT3 = "Dauer in Millisekunden";
+Blockly.Msg.multifunction_tone_TOOLTIP = "Steuert den Buzzer an";
+Blockly.Msg.multifunction_notone_INPUT = "Tonausgabe stoppen";
+Blockly.Msg.multifunction_notone_TOOLTIP = "Setzt die Lautstärke des Buzzers auf 0";
+Blockly.Msg.multifunction_segment_TEXT = "Ziffenanzeige";
+Blockly.Msg.multifunction_segment_INPUT1 = "1. Ziffer";
+Blockly.Msg.multifunction_segment_INPUT2 = "2. Ziffer";
+Blockly.Msg.multifunction_segment_INPUT3 = "3. Ziffer";
+Blockly.Msg.multifunction_segment_INPUT4 = "4. Ziffer";
+Blockly.Msg.multifunction_segment_TOOLTIP = "Setzt die vier Ziffern der 7-Segmentanzeige";
 
 // Module RF433 (Added August 23th 2018)
 Blockly.Msg.RF433_rxready_TEXT = "Message Ready";

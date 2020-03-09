@@ -1207,13 +1207,11 @@
 	<category name="CAT_MULTIFUNCTION" colour="#0152AB">
 		<block type="multifunction_digital_read" colour="#0152AB"></block>
 		<block type="multifunction_pot_read" colour="#0152AB"></block>
-		<block type="multifunction_analog_read" colour="#0152AB"></block>
 		<block type="multifunction_buildin_led" colour="#0152AB"></block>
 		<block type="multifunction_tone" colour="#0152AB"></block>
 		<block type="multifunction_notone" colour="#0152AB"></block>
 		<block type="multifunction_segment" colour="#0152AB"></block>
 		<block type="multifunction_segment_number" colour="#0152AB"></block>
-		<block type="multifunction_PWM_write" colour="#0152AB"></block>
 	</category>
 	<category name="CAT_RFID" colour="#9BACB4">
 		<block type="RFID_module" colour="#9BACB4">
