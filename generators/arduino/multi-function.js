@@ -107,36 +107,12 @@ Blockly.Arduino.multifunction_segment = function() {
 Blockly.Arduino.multifunction_segment_number = function() {
   var value_num = Blockly.Arduino.valueToCode(this, 'NUM', Blockly.Arduino.ORDER_ATOMIC);
   
-  Blockly.Arduino.includes_['define_multifunction_segments'] = '#define LATCH_DIO 4\n' +
-  '#define CLK_DIO 7\n' +
-  '#define DATA_DIO 8';
-  Blockly.Arduino.definitions_['definition_multifunction_segments'] =
-  '/* Segment byte maps for numbers 0 to 9 */\n' +
-  'const byte SEGMENT_MAP[] = {0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0X80,0X90};\n\n' +
-  '/* Byte maps to select digit 1 to 4 */\n' +
-  'const byte SEGMENT_SELECT[] = {0xF1,0xF2,0xF4,0xF8};;\n\n' +
-  '/* Wite a ecimal number between 0 and 9 to one of the 4 digits of the display */\n' +
-  'void WriteNumberToSegment(byte Segment, byte Value)\n' +
-  '  {\n' +
-  '  digitalWrite(LATCH_DIO,LOW);\n' +
-  '  shiftOut(DATA_DIO, CLK_DIO, MSBFIRST, SEGMENT_MAP[Value]);\n' +
-  '  shiftOut(DATA_DIO, CLK_DIO, MSBFIRST, SEGMENT_SELECT[Segment] );\n' +
-  '  digitalWrite(LATCH_DIO,HIGH);\n' +
-  '  }\n\n' +
-  '/* Write a decimal number between 0 and 9999 to the display */\n' +
-  'void WriteNumber(int Number)\n' +
-  '  {\n' +
-  '  WriteNumberToSegment(0 , ' + value_num + '/1000);\n' +
-  '  WriteNumberToSegment(1 , ' + value_num + '/100 % 10);\n' +
-  '  WriteNumberToSegment(2 , ' + value_num + '/10 % 10);\n' +
-  '  WriteNumberToSegment(3 , ' + value_num + ' % 10);\n' +
-  '  }\n\n';
-  
-  Blockly.Arduino.setups_['setup_multifunction_segments'] = '/* Set DIO pins to outputs */\n' +
-  '  pinMode(LATCH_DIO,OUTPUT);\n' +
-  '  pinMode(CLK_DIO,OUTPUT);\n' +
-  '  pinMode(DATA_DIO,OUTPUT);\n';
-  var code = 'WriteNumber(' + value_num + ');\n';
+  Blockly.Arduino.includes_['define_multifunction_segments'] = '#include <TimerOne.h>\n' +
+  '#include <MultiFuncShield.h>';
+  Blockly.Arduino.definitions_['definition_multifunction_segments'] = '';
+  Blockly.Arduino.setups_['setup_multifunction_segments'] = 'Timer1.initialize();\n' +
+  '  MFS.initialize(&Timer1);\n';
+  var code = 'MFS.write(' + value_num + ');\n';
   return code;
 };
 Blockly.Arduino.multifunction_PWM_write = function() {
