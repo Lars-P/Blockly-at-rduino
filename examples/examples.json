@@ -5,7 +5,7 @@
         "image": "./blink/blink.jpg",
         "link_url": "",
         "link_text": "",
-        "visible": true
+        "visible": false
     },
     {
         "source_url": "./robobox/Mini_alarme_V2.xml",
@@ -13,7 +13,7 @@
         "image": "./robobox/robobox_box1.2.png",
         "link_url": "",
         "link_text": "",
-        "visible": true
+        "visible": false
     },
     {
         "source_url": "./robobox/mois1.xml",
@@ -29,7 +29,7 @@
         "image": "./robobox/robobox_box2.2.png",
         "link_url": "",
         "link_text": "",
-        "visible": true
+        "visible": false
     },
     {
         "source_url": "./robobox/mois3.xml",
@@ -37,7 +37,7 @@
         "image": "./robobox/robobox_box3.2.png",
         "link_url": "",
         "link_text": "",
-        "visible": true
+        "visible": false
     },
     {
         "source_url": "./robobox/mois4-simple.xml",
@@ -45,7 +45,7 @@
         "image": "./robobox/robobox_box4.2.png",
         "link_url": "",
         "link_text": "",
-        "visible": true
+        "visible": false
     },
     {
         "source_url": "./robobox/mois4-complexe.xml",
@@ -53,7 +53,7 @@
         "image": "./robobox/robobox_box4.2.png",
         "link_url": "",
         "link_text": "",
-        "visible": true
+        "visible": false
     },
     {
         "source_url": "./robobox/mois5-test_led.xml",
@@ -61,7 +61,7 @@
         "image": "./robobox/robobox_box5.2.png",
         "link_url": "",
         "link_text": "",
-        "visible": true
+        "visible": false
     },
     {
         "source_url": "./robobox/mois5-transmitter.xml",
@@ -69,7 +69,7 @@
         "image": "./robobox/robobox_box5.2.png",
         "link_url": "",
         "link_text": "",
-        "visible": true
+        "visible": false
     },
     {
         "source_url": "./robobox/mois6-test_led.xml",
@@ -77,7 +77,7 @@
         "image": "./robobox/robobox_box5.2.png",
         "link_url": "",
         "link_text": "",
-        "visible": true
+        "visible": false
     },
     {
         "source_url": "./robobox/mois6-phare.xml",
@@ -85,7 +85,7 @@
         "image": "./robobox/robobox_box5.2.png",
         "link_url": "",
         "link_text": "",
-        "visible": true
+        "visible": false
     },
     {
         "source_url": "./robobox/mois6-ligne.xml",
@@ -93,7 +93,7 @@
         "image": "./robobox/robobox_box5.2.png",
         "link_url": "",
         "link_text": "",
-        "visible": true
+        "visible": false
     },
     {
         "source_url": "./robobox/mois6-tournesol.xml",
@@ -101,7 +101,7 @@
         "image": "./robobox/robobox_box5.2.png",
         "link_url": "",
         "link_text": "",
-        "visible": true
+        "visible": false
     },
     {
         "source_url": "./mBot/mbot_eviter_obstacles/mbot_eviter_obstacles.xml",
@@ -382,5 +382,13 @@
         "link_url": "",
         "link_text": "",
         "visible": false
+    },
+    {
+        "source_url": "dfv/blink1.xml",
+        "source_text": "1. Einfaches Blinken",
+        "image": "./dfv/mfshield.png",
+        "link_url": "",
+        "link_text": "",
+        "visible": true
     }
 ]
