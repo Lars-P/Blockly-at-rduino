@@ -59,7 +59,7 @@ Blockly.Blocks.multifunction_digital_read = {
         .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/multi-function/BP.jpg', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))
       	.appendField(Blockly.Msg.multifunction_digital_read_INPUT)
         .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(new Blockly.FieldDropdown([["S1", "A1"], ["S2", "A2"], ["S3", "A3"]]), 'BP');
+        .appendField(new Blockly.FieldDropdown([["A1", "A1"], ["A2", "A2"], ["A3", "A3"]]), 'BP');
     this.setOutput(true, 'Boolean');
     this.setTooltip(Blockly.Msg.multifunction_digital_read_TOOLTIP);
   }

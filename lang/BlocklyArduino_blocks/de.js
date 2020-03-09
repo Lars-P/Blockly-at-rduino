@@ -139,7 +139,7 @@ Blockly.Msg.CAT_DFRobot_SHIELD_LCDKEYPAD = "Shield LCD Keypad"; //Added february
 Blockly.Msg.CAT_DFPLAYER = "DFPlayer mini MP3";
 Blockly.Msg.CAT_DFRobot_ISD1820 = "Voice Recorder-ISD1820";
 
-Blockly.Msg.CAT_LED_RGB_CHAIN = "LED-Leuchtstreifen";
+Blockly.Msg.CAT_LED_RGB_CHAIN = "Lichtleiste";
 Blockly.Msg.CAT_OLED_U8G = "OLED screen I2C";
 
 Blockly.Msg.CAT_ROBUNO = "RobUno";  //added march 17th 2016
@@ -204,7 +204,7 @@ Blockly.Msg.CAT_JEULIN = "Traffic light";  //added january 11th 2016
 Blockly.Msg.CAT_JEULIN_IN = "Sensors";
 Blockly.Msg.CAT_JEULIN_OUT = "Actuators";
 
-Blockly.Msg.CAT_MULTIFUNCTION = "Multi-Fuction Shield";  //added march 9th 2016
+Blockly.Msg.CAT_MULTIFUNCTION = "Multifunktions-Shield";  //added march 9th 2016
 
 Blockly.Msg.CAT_RFID = "RFID";  //added april 13th 2017
 
@@ -1156,7 +1156,7 @@ Blockly.Msg.lp2i_u8g_4draw_print_N3 = "Number 3 (at end) ="
 Blockly.Msg.lp2i_u8g_4draw_print_Text_line4 = "line 4 =";
 Blockly.Msg.lp2i_u8g_4draw_print_N4 = "Number 4 (at end) ="
 
-Blockly.Msg.lp2i_ledRGB_WS2812B_init = "Basiseinrichtung Lichtleiste";
+Blockly.Msg.lp2i_ledRGB_WS2812B_init = "Grundeinstellungen Lichtleiste";
 Blockly.Msg.lp2i_ledRGB_WS2812B_init_Pin = "Pin =";
 Blockly.Msg.lp2i_ledRGB_WS2812B_init_Number_of_Pixels = "Anzahl Pixel =";
 Blockly.Msg.lp2i_ledRGB_WS2812B_DEFAULT_NAME = "RGB_LED";
